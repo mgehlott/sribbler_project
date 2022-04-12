@@ -9,4 +9,20 @@ body{
   background-size: cover;
 }
 
+.postbtn{
+  display: flex;
+  justify-content: center;  
+  margin-top: 9rem;
+}
+
+.postbtn button{
+  
+  background-color: gold;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  height: 40px;
+  width: 110px;
+  margin-left: 1rem ;
+}
+
 
