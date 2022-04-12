@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: blue;
+}
+
+
+button{
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
