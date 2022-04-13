@@ -46,7 +46,6 @@ body{
   padding: 0 20px 20px 20px;
   border: 1px solid #888;
   width: 30%; /* Could be more or less, depending on screen size */
-  
  
 }
 
@@ -92,10 +91,14 @@ label{
   font-weight: bold;
 }
 
-input{
+input ,textarea{
   border: none;
   background-color: rgb(237, 237, 238);
   outline: none;
+ 
+}
+
+input{
   height: 40px;
   margin-bottom: 20px;
 }
@@ -107,9 +110,10 @@ input:active{
   background-color: rgb(72, 189, 72);
   border: none;
   color: white;
-  width: 100%;
   height: 45px;
+  width: 100%;
 }
+
 
 #signInModalContent{
   margin-top: 3rem;
@@ -128,3 +132,28 @@ input:active{
 #signup{
   color: blue;
 }
+
+#createPostModalContent{
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}
+
+#createPostModalContent label {
+  display: flex;
+  justify-items: left; 
+}
+
+.createPostBtnModal{
+  background-color: rgb(72, 189, 72);
+  border: none;
+  color: white;
+  height: 40px;
+  width: 6rem;
+  margin-top: 1rem;
+}
+
+#title{
+  width: 50%;
+}
+
