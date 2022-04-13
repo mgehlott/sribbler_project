@@ -17,10 +17,73 @@
        <p>Explore, Imagine,create</p>
     </div>
     <div class="btn">
-        <button>Sign In</button>
-        <button>Sing Up</button>
+        <button id="signInBtn">Sign In</button>
+        <button id="signUpBtn">Sing Up</button>
     </div>
     </div>
+
+    <!-- modal for sign up -->
+
+    <div id="signUpModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close" id="singUpclose">&times;</span>
+            <div class="modal-header">
+               <h2>Get Started</h2> 
+            </div>
+            <div class="line"></div>
+          <form class="form">
+              <div class="input">
+                  <label for="firstName">Full Name</label>
+                  <input type="text" id="firstName" placeholder="Enter Full Name" required />
+              </div>
+              <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required />
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password" required />
+            </div>
+            <div class="input">
+                <label for="cpassword">Conform Password</label>
+                <input type="text" id="cpassword" placeholder="Conform Password" required />
+            </div>
+            <button class="signUpBtn">Sign Up</button>
+          </form>  
+        </div>
+      </div>
+
+      <!-- modal for sign in -->
+
+      <div id="signInModal" class="modal">
+
+        <div class="modal-content" id="signInModalContent">
+            <span class="close" id="singInclose">&times;</span>
+            <div class="modal-header">
+               <h2>Welcome Back!</h2> 
+            </div>
+            <div class="line"></div>
+          <form class="form">
+             
+              <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required />
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password" required />
+            </div>
+            
+            <button class="signUpBtn">Sign Up</button>
+          </form>  
+           <div class="footerSingIn">
+              <p>Not a member ?</p>
+              <p id="signup"><a href="#">Sign Up</a></p>
+           </div>
+        </div>
+      </div>
+
     <div class="postbtn">
          <button>All Posts</button>
          <button>Create Post</button>
@@ -28,6 +91,7 @@
    
 
     <script src="./scripts/index.js"></script>
+    <script src="/scripts/header.js"></script>
 </body>
 </html>
 
