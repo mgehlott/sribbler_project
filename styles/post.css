@@ -1,0 +1,79 @@
+.main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.author-edit{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pbtn{
+    background-color: #FF2E2E;
+    border: none;
+    box-shadow: 2px 3px 10px #FF2E2E;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.editBtn{
+    width: 70px;
+    height: 40px;
+}
+
+.author-edit p{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.post-body{
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.likeBtn{
+    width: 120px;
+    height: 40px;
+}
+
+.like-actions{
+    margin-top: 2rem;
+}
+
+.comment-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.commentBtn{
+    margin-top: 2rem;
+    width: 100px;
+    height: 40px;   
+}
+
+.comment-section{
+    margin-top: 2rem;
+    
+}
+.comments{
+    background-color:gainsboro;
+    padding: 1rem;
+}
+
+.comments p{
+    background-color: white;
+    padding: 1rem;
+}
