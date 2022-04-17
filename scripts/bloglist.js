@@ -1,6 +1,6 @@
 
 const trashBtn = document.getElementsByClassName('trash');
-const trashModal = document.getElementById('signInModal');
+const trashModal = document.getElementById('trashInModal');
 
 const noBtn = document.getElementById('noBtn');
 
@@ -17,10 +17,30 @@ noBtn.addEventListener('click', () => {
     trashModal.style.display = 'none';
 });
 
+// function elclipseClicked(e) {
+//     localStorage.setItem('item-clicked', this.id);
+//     console.log('itemsss');
+// }
 
-for (const ele = 0; ele < eclipse.length; ele++)
-{
-    
-    
+
+for (const ele of eclipse) {
+    ele.addEventListener('click', function () {
+
+        window.addEventListener('click', (e) => {
+            localStorage.setItem('item-clicked', this.id);
+        });
+        console.log('itemsss');
+        location.href = '../html/post.html';
+    });
 }
+
+
+
+
+
+
+window.addEventListener('click', (e) => console.log(e.target));
+
+
+
 

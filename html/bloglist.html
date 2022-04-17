@@ -10,9 +10,11 @@
     <script src="https://kit.fontawesome.com/286fb727ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- header -->
     
     <div class="header">
-        <div>
+        <div class="logo">
        <h1>ScriBBler</h1>
        <p>Explore, Imagine,create</p>
     </div>
@@ -22,8 +24,76 @@
     </div>
     </div>
 
+    <!-- modal for sign up -->
+
+    <div id="signUpModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close" id="singUpclose">&times;</span>
+            <div class="modal-header">
+               <h2>Get Started</h2> 
+            </div>
+            <div class="line"></div>
+          <form class="form">
+              <div class="input">
+                  <label for="firstName">Full Name</label>
+                  <input type="text" id="firstName" placeholder="Enter Full Name" required />
+              </div>
+              <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required />
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password" required />
+            </div>
+            <div class="input">
+                <label for="cpassword">Conform Password</label>
+                <input type="text" id="cpassword" placeholder="Conform Password" required />
+            </div>
+            <button class="signUpBtn">Sign Up</button>
+          </form>  
+        </div>
+      </div>
+
+      <!-- modal for sign in -->
+
+      <div id="signInModal" class="modal">
+
+        <div class="modal-content" id="signInModalContent">
+            <span class="close" id="singInclose">&times;</span>
+            <div class="modal-header">
+               <h2>Welcome Back!</h2> 
+            </div>
+            <div class="line"></div>
+          <form class="form">
+             
+              <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required />
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password" required />
+            </div>
+            
+            <button class="signUpBtn">Sign Up</button>
+          </form>  
+           <div class="footerSingIn">
+              <p>Not a member ?</p>
+              <p id="signup"><a href="#">Sign Up</a></p>
+           </div>
+        </div>
+      </div>
+
+
+
+    <!-- all blogs  -->
+
 
     <div class="container">
+
+
         <div class="post">
             <div class="name">
                 <p>Sakshi Gupta</p>
@@ -39,79 +109,71 @@
 
             </div>
              
-            <div class="eclipse"><a href="/html/post.html"><i class="fa-solid fa-ellipsis"></i></a></div>
+            <div id="1" class="eclipse" onclick="elclipseClicked()"><i id="33" class="fa-solid fa-ellipsis"></i></div>
         </div>
 
         <div class="post">
             <div class="name">
-                <p>Sakshi Gupta</p>
+                <p>Colby Fayock</p>
             </div>
             <div class="details">
                 <div>
-               <h3>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h3>
+               <h3>What is linting and how can it save you time?</h3>
                <span class="trash"><i class="fa-solid fa-trash-can"></i></span>
                 </div>
-               <p>Since JavaScript does not have any type-checking, either of these keywords
-                can be used to declare a variable of any type (datatype) in JavaScript. 
-               Though all the three keywords are used for the same purpose, they are different.</p>
+               <p>One of the biggest challenges in software development is time.It’s something we can’t easily get more of, but linting can help us  make the most out of the time we have.</p>
 
             </div>
              
-            <div class="eclipse"><a href="/html/post.html"><i class="fa-solid fa-ellipsis"></i></a></div>
+            <div id="2" class="eclipse"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
 
         <div class="post">
             <div class="name">
-                <p>Sakshi Gupta</p>
+                <p>Yazeed Bzadough</p>
             </div>
             <div class="details">
                 <div>
-               <h3>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h3>
+               <h3>How to Get More Views on Your Tech Blog</h3>
                <span class="trash"><i class="fa-solid fa-trash-can"></i></span>
                 </div>
-               <p>Since JavaScript does not have any type-checking, either of these keywords
-                can be used to declare a variable of any type (datatype) in JavaScript. 
-               Though all the three keywords are used for the same purpose, they are different.</p>
+               <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
 
             </div>
              
-            <div class="eclipse"><a href="/html/post.html"><i class="fa-solid fa-ellipsis"></i></a></div>
+            <div id="3" class="eclipse"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
 
         <div class="post">
             <div class="name">
-                <p>Sakshi Gupta</p>
+                <p>Cedd Burge</p>
             </div>
             <div class="details">
                 <div>
-               <h3>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h3>
+               <h3>How to write easily describable code</h3>
                <span class="trash"><i class="fa-solid fa-trash-can"></i></span>
                 </div>
-               <p>Since JavaScript does not have any type-checking, either of these keywords
-                can be used to declare a variable of any type (datatype) in JavaScript. 
-               Though all the three keywords are used for the same purpose, they are different.</p>
+               <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which leads to confusion when discussing the code.</p>
 
             </div>
              
-            <div class="eclipse"><a href="/html/post.html"><i class="fa-solid fa-ellipsis"></i></a></div>
+            <div id="4" class="eclipse"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
 
         <div class="post row3">
             <div class="name">
-                <p>Sakshi Gupta</p>
+                <p>Srishti Gupta</p>
             </div>
             <div class="details">
                 <div>
-               <h3>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h3>
+               <h3>Everything you should know about ‘module’ & ‘require’ in Node.js</h3>
                <span class="trash"><i class="fa-solid fa-trash-can"></i></span>
                 </div>
-               <p>Since JavaScript does not have any type-checking, either of these keywords
-                can be used to declare a variable of any type (datatype) in JavaScript. 
-               Though all the three keywords are used for the same purpose, they are different.</p>
+               <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.</p>
 
             </div>
              
-            <div class="eclipse"><a href="/html/post.html"><i class="fa-solid fa-ellipsis"></i></a></div>
+            <div id="5" class="eclipse"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
 
     </div>
@@ -119,7 +181,7 @@
 
     <!-- modal of trash -->
 
-    <div id="signInModal" class="modal">
+    <div id="trashInModal" class="modal">
 
         <div class="modal-content" id="signInModalContent">
            

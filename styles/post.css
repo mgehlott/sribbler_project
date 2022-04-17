@@ -77,3 +77,13 @@
     background-color: white;
     padding: 1rem;
 }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }

@@ -9,9 +9,6 @@ const signInBtn = document.getElementById('signInBtn');
 const singInclose = document.getElementById('singInclose');
 const singUpclose = document.getElementById('singUpclose');
 
-const createPostModal = document.getElementById('createPostModal');
-const createPostModalClose = document.getElementById('createPostModalclose');
-const createBtn = document.getElementById('createBtn');
 
 
 // open sign up modal
@@ -38,22 +35,15 @@ singInclose.addEventListener('click', () => {
     signInModal.style.display = 'none';
 });
 
-createBtn.addEventListener('click', () => {
-    createPostModal.style.display = 'block'
-});
 
-createPostModalClose.addEventListener('click', () => {
-    createPostModal.style.display = 'none';
-    console.log('create modla closed');
-});
 
 // close modal by clickng backdrop
 
 window.onclick = (event) => {
-    if (event.target == signInModal || event.target == signUpModal || event.target == createPostModal) {
+    if (event.target == signInModal || event.target == signUpModal) {
         signInModal.style.display = "none";
         signUpModal.style.display = "none";
-        createPostModal.style.display = 'none';
+        //createPostModal.style.display = 'none';
         //  console.log('window');
     }
 }
@@ -68,6 +58,3 @@ signUpPTag.addEventListener('click', () => {
 
 });
 
-createPostModalClose.addEventListener('click', () => {
-    createPostModal.style.display = 'none';
-});

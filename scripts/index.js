@@ -32,5 +32,23 @@ const data = [
     }
 ];
 
+const createBtn = document.getElementById('createBtn');
+const createPostModal = document.getElementById('createPostModal');
+const createPostModalClose = document.getElementById('createPostModalclose');
 
-export default data;
+createBtn.addEventListener('click', () => {
+    createPostModal.style.display = 'block'
+});
+
+createPostModalClose.addEventListener('click', () => {
+    createPostModal.style.display = 'none';
+    console.log('create modla closed');
+});
+
+
+window.onclick = (event) => {
+    if (event.target == createPostModal) {
+        createPostModal.style.display = 'none';
+        //  console.log('window');
+    }
+}

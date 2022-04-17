@@ -7,11 +7,14 @@
     <title>Post</title>
     <link rel="stylesheet" href="/styles/header.css"/>
     <link rel="stylesheet" href="/styles/post.css"/>
+    <script src="https://kit.fontawesome.com/286fb727ed.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
+
+    <!-- header -->
     
     <div class="header">
-        <div>
+        <div class="logo">
        <h1>ScriBBler</h1>
        <p>Explore, Imagine,create</p>
     </div>
@@ -21,13 +24,80 @@
     </div>
     </div>
 
+    <!-- modal for sign up -->
+
+    <div id="signUpModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close" id="singUpclose">&times;</span>
+            <div class="modal-header">
+               <h2>Get Started</h2> 
+            </div>
+            <div class="line"></div>
+          <form class="form">
+              <div class="input">
+                  <label for="firstName">Full Name</label>
+                  <input type="text" id="firstName" placeholder="Enter Full Name" required />
+              </div>
+              <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required />
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password" required />
+            </div>
+            <div class="input">
+                <label for="cpassword">Conform Password</label>
+                <input type="text" id="cpassword" placeholder="Conform Password" required />
+            </div>
+            <button class="signUpBtn">Sign Up</button>
+          </form>  
+        </div>
+      </div>
+
+      <!-- modal for sign in -->
+
+      <div id="signInModal" class="modal">
+
+        <div class="modal-content" id="signInModalContent">
+            <span class="close" id="singInclose">&times;</span>
+            <div class="modal-header">
+               <h2>Welcome Back!</h2> 
+            </div>
+            <div class="line"></div>
+          <form class="form">
+             
+              <div class="input">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required />
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter Password" required />
+            </div>
+            
+            <button class="signUpBtn">Sign Up</button>
+          </form>  
+           <div class="footerSingIn">
+              <p>Not a member ?</p>
+              <p id="signup"><a href="#">Sign Up</a></p>
+           </div>
+        </div>
+      </div>
+
+
+    <!-- expanded post -->
+
     <main class="main">
-         <p class="title">What is linting and how can it save you time?</p>
+         <p class="title" contenteditable="false" id="title">What is linting and how can it save you time ?</p>
          <div class="author-edit">
-            <p>Colby Fayock</p>
-            <button class="editBtn pbtn">Edit</button>
+             <div class="logo">
+            <p id="username">Colby Fayock</p>
+        </div>
+            <button class="editBtn pbtn" id="editAndSaveBtn">Edit <i class="fa-solid fa-pen-to-square"></i> </button>
          </div>
-         <div class="post-body">
+         <div class="post-body" id="body" contenteditable="false">
             One of the biggest challenges in software development is time.
             It’s something we can’t easily get more of, but linting can help us  
             make the most out of the time we have.
@@ -41,24 +111,29 @@
             The traditional website uses js to provide several forms of interactivity and simplicity.
          </div>
 
+         <!-- like btn -->
+
          <div class="like-actions ">
-             <button class="pbtn likeBtn">Like</button>
-             <p>Be the first one to like this!</p>
+             <button class="pbtn likeBtn" id="likebtn"><i class="fa-solid fa-thumbs-up"></i> Like</button>
+             <p id="likedText">Be the first one to like this!</p>
          </div>
+
+         <!-- comment input -->
          <div class="comment-input">
-             <textarea rows="5" cols="90"></textarea>
+             <textarea id="textareaComment" placeholder="Leave a comment..." rows="5" cols="90"></textarea>
              <button class="pbtn commentBtn">Comment</button>
          </div>
+
+         <!-- all coments -->
          <div class="comment-section">
             <h3>All Comments</h3>
             <div class="comments">
-              <p>This First Comment</p>
-              <p>This is Second Comment</p>
+              
             </div>
          </div>
     </main>
-
+   
     <script src="/scripts/header.js"></script>
-    <script src="/scripts/post.js"></script>
+    <script  src="/scripts/post.js"></script>
 </body>
 </html>
